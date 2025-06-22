@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book an Experience</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="section">
+    <h2>Book Your Experience</h2>
+    <form class="form">
+      <label for="experience">Choose Experience:</label><br>
+      <select id="experience" required>
+        <option value="">Select</option>
+        <option>Storytelling Night</option>
+        <option>Cooking Workshop</option>
+        <option>Clean-Up Drive</option>
+        <option>Festival & Dance</option>
+        <option>Community Safari</option>
+      </select><br><br>
+
+      <label for="date">Choose Date:</label><br>
+      <input type="date" id="date" required><br><br>
+
+      <label for="people">Number of Guests:</label><br>
+      <input type="number" id="people" min="1" value="1" required><br><br>
+
+      <button class="btn" formaction="payment.html">Proceed to Payment</button>
+    </form>
+    <a href="index.html" class="btn secondary">Back Home</a>
+  </div>
+</body>
+</html>
